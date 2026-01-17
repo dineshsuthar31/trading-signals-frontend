@@ -1,0 +1,390 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+body {
+  background: #05070f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Common Layout ===== */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(14, 18, 35, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+}
+
+.auth-title {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.auth-subtitle {
+  margin-top: 6px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group {
+  margin-top: 16px;
+}
+
+label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 11px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  outline: none;
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+}
+
+input:focus {
+  border-color: rgba(99, 102, 241, 0.9);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+.btn {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #4f46e5;
+  color: white;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: #4338ca;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-footer {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.link {
+  color: #8b87ff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.error-text {
+  margin-top: 12px;
+  text-align: center;
+  color: #ff6b6b;
+  font-size: 13px;
+}
+
+/* ===== Dashboard ===== */
+.dashboard-page {
+  min-height: 100vh;
+  padding: 22px;
+}
+
+.dashboard-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.dashboard-title {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.dashboard-subtitle {
+  margin-top: 4px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.badge {
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.badge-free {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+}
+
+.badge-paid {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+}
+
+.card {
+  background: rgba(14, 18, 35, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.55);
+}
+
+.card-head {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  font-weight: 800;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table thead {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.table th,
+.table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  text-align: left;
+}
+
+.table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tag {
+  padding: 5px 9px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 11px;
+}
+
+.tag-buy {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+}
+
+.tag-sell {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fb7185;
+}
+
+.small-muted {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-inline {
+  width: auto;
+  margin-top: 0;
+  padding: 10px 14px;
+}
+
+/* Dashboard Actions */
+.dashboard-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Card Body */
+.card-body {
+  padding: 16px;
+}
+
+/* Logout Ghost Button */
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Account Info */
+.info-line {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.info-line:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  min-width: 70px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 700;
+}
+
+.info-value {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+}
+
+
+/* Signals Table */
+.signals-table-wrap {
+  margin-top: 18px;
+}
+
+.signals-table-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.signals-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.signals-count {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.signals-table-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 14px;
+  overflow-x: auto;
+  backdrop-filter: blur(10px);
+}
+
+.signals-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.signals-table thead th {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 12px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.signals-table tbody td {
+  padding: 12px 10px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.signals-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.symbol {
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.time {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px 10px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* BUY/SELL badge */
+.signal-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.signal-pill.buy {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.signal-pill.sell {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
