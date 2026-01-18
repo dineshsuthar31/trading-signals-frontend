@@ -36,21 +36,19 @@ export default function Login() {
                 <div style={{ marginBottom: 10 }}>
                     <label>Email</label>
                     <input
-                        style={{ width: "100%", padding: 10 }}
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="test@gmail.com"
+                        placeholder="enter your email"
                     />
                 </div>
 
                 <div style={{ marginBottom: 10 }}>
                     <label>Password</label>
                     <input
-                        style={{ width: "100%", padding: 10 }}
                         type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        placeholder="Test@123"
+                        placeholder="enter your passwrod"
                     />
                 </div>
 
@@ -59,7 +57,7 @@ export default function Login() {
                 </button>
             </form>
             <p style={{ marginTop: 10 }}>
-                New user? <Link className="link" to="/signup">Create account</Link>
+                Don't have an account? <Link className="link" to="/signup">Create account</Link>
             </p>
 
         </div>

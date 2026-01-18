@@ -31,7 +31,6 @@ export default function SignalsTable({ signals = [] }) {
                 <tr key={i}>
                   <td className="symbol">{s.symbol}</td>
 
-                  {/* FIX: backend sends action not signal */}
                   <td>
                     <span
                       className={`signal-pill ${

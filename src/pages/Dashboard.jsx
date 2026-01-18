@@ -56,7 +56,6 @@ export default function Dashboard() {
   return (
     <div className="dashboard-page">
       <div className="dashboard-wrap">
-        {/* Header */}
         <div className="dashboard-header">
           <div>
             <h2 className="dashboard-title">Trading Signals Dashboard</h2>
@@ -83,7 +82,6 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Body */}
       {loading ? (
         <div className="card">
           <div className="card-body">
@@ -92,7 +90,6 @@ export default function Dashboard() {
         </div>
       ) : (
         <>
-          {/* User Info */}
           <div className="card">
             <div className="card-head">
               <div className="card-title">Account Info</div>
@@ -119,7 +116,6 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Signals Table */}
           <div className="card" style={{ marginTop: 16 }}>
             <div className="card-head">
               <div className="card-title">Latest Signals</div>
@@ -135,7 +131,6 @@ export default function Dashboard() {
         </>
       )}
 
-      {/* Error Message */}
       {msg && <p className="error-text">{msg}</p>}
     </div>
   );

@@ -1,4 +1,3 @@
-/* ===== Global Reset ===== */
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +13,8 @@ body {
   justify-content: center;
 }
 
-/* ===== Common Layout ===== */
 .auth-page {
+  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -24,7 +23,7 @@ body {
 }
 
 .auth-card {
-  width: 100%;
+  width: 400px;
   max-width: 420px;
   background: rgba(14, 18, 35, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -254,7 +253,6 @@ input:focus {
   padding: 16px;
 }
 
-/* Logout Ghost Button */
 .btn-ghost {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -264,7 +262,6 @@ input:focus {
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* Account Info */
 .info-line {
   display: flex;
   gap: 10px;
